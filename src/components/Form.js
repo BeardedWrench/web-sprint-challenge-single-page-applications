@@ -1,11 +1,15 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 export default function Form( props ){
     const { values, submit, change, disabled, errors } = props;
 
+    const history = useHistory();
+
     const onSubmit = event => {
         event.preventDefault();
         submit();
+        history.push('/checkout');
     }
 
     const onChange = event => {

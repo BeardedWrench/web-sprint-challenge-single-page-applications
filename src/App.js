@@ -77,7 +77,7 @@ const App = () => {
     size: formVals.size,
     sauce: formVals.sauce,
     additional: formVals.additional,
-    toppings: ['Pepperoni', 'Sausage', 'Onions', 'Green Pepper' ].filter( topping => {
+    toppings: ['pepperoni', 'sausage', 'onions', 'greenPepper' ].filter( topping => {
       return formVals[topping];
     })
    }
@@ -106,7 +106,9 @@ const App = () => {
           />
         </Route>
 
-        <Route path="/checkout" component={ Checkout } />
+        <Route path="/checkout">
+        <Checkout details={ pizza } />
+        </Route>
 
         <Route path="/" component={ Home } />
       </Switch>
