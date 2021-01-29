@@ -9,7 +9,7 @@ export default function Navigation( props ){
       <h1>Lambda Pizza</h1>
       <nav>
         <Link to="/" className="btn">Home</Link>
-        <Link to="/" className="btn">Help</Link>
+        <Link to="/order" className="btn">Order</Link>
       </nav>
     </div>
   );

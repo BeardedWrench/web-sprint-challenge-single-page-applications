@@ -39,12 +39,6 @@ const App = () => {
   const [ formErrors, setFormErrors ] = useState( initFormErrors );
   const [ disabled, setDisabled ] = useState( initDisabled );
 
-  const getPizza = () => {
-    axios.get( `https://reqres.in/api/orders` )
-      .then( res => setPizza( res.data ) )
-      .catch( err => console.log( err ) )
-  }
-
  const postPizza = newPizza => {
    axios.post( `https://reqres.in/api/orders`, newPizza )
     .then( res => setPizza( [ res.data, ...pizza ] ) )

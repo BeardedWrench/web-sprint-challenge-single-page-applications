@@ -14,8 +14,8 @@ export default function Pizza( props ){
             
             {
                 !!details.toppings && !!details.toppings.length &&
-                <div>
-                    Toppings:
+                <div className="pizza-toppings-list">
+                    <h4>Toppings:</h4>
                     <ul>
                         {details.toppings.map( ( topping, idx ) => <li key={ idx }>{ topping }</li>)}
                     </ul>

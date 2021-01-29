@@ -321,5 +321,37 @@
   margin-bottom:20px;
 }
 .pizza-card{
+  width:30%;
+  margin-bottom:20px;
+  border-radius:10px;
+  background-color:#ececec;
+  overflow:hidden;
+  box-shadow: rgb(0 0 0 / 20%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+  padding:20px;
+  color:#515151;
+}
+.pizza-card h2{
+  font-size:2rem;
+  text-align:center;
+  padding-bottom:10px;
+  margin-bottom:10px;
+  border-bottom: 2px dashed grey;
   
+}
+.pizza-card h3{
+  font-size:1.8rem;
+  text-decoration: underline;
+  margin-bottom:10px;
+}
+.pizza-details{
+  font-size:1.5rem;
+  line-height: 2;
+}
+.pizza-toppings-list li{
+  margin-left:30px;
+  font-weight:bold;
+}
+.pizza-toppings-list h4{
+  text-decoration: underline;
+  font-weight:bold;
 }
