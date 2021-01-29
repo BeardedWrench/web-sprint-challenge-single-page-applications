@@ -229,7 +229,7 @@
 }
 
 .form-label{
-  background:#f9d2d2;
+  background:#fb8787;
   padding-top:20px;
   padding-bottom:20px;
 
@@ -291,6 +291,9 @@
 }
 .form-content button:active{
   background:#e55050;
+}
+.form-content button:disabled, button[disabled]{
+  opacity: 0.3;
 }
 .checkout-img{
   background-position: bottom;
