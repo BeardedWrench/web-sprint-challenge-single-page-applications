@@ -3,6 +3,7 @@ import React from 'react';
 
 import Navigation from './Navigation';
 import Footer from './Footer';
+import Pizza from './Pizza';
 
 export default function Checkout( props ){
     const { details } = props;
@@ -14,10 +15,13 @@ export default function Checkout( props ){
               <h2>Congrats! Your pizza is on it's way!</h2>
           </div>
 
-          test this:
-          <div>
+          <div className="checkout-container">
               {
-                  console.log(details)
+                  details.map( pizza => {
+                      return (
+                          <Pizza details={ pizza }/>
+                      )
+                  })
               }
           </div>
           <Footer />

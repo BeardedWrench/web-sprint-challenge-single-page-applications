@@ -83,9 +83,6 @@ const App = () => {
    }
    postPizza( newPizza );
  }
-  useEffect( () => {
-    getPizza()
-  }, [] )
 
   useEffect( () => {
     schema.isValid( formVals ).then( valid => setDisabled( !valid ) )
@@ -107,7 +104,7 @@ const App = () => {
         </Route>
 
         <Route path="/checkout">
-        <Checkout details={ pizza } />
+          <Checkout details={ pizza } />
         </Route>
 
         <Route path="/" component={ Home } />
