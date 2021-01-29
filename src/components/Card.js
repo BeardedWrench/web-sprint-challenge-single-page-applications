@@ -1,16 +1,17 @@
 import React from 'react';
 
 export default function Card( props ){
-
+    const { img, price, name } = props;
 
   return(
       <div className="card">
-          <img src="https://www.papajohns.com/free-pizza/img/hero-free-pizza.jpg"/>
-          <h3>Pepperoni Pizza</h3>
+          <img src={ img }/>
+          <h3>{ name }</h3>
           <div className="card-cta">
-              <h4>$12.99</h4>
+              <h4>${ price }</h4>
               <button>Order</button>
           </div>
       </div>
   );
 }
+
